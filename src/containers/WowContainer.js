@@ -1,80 +1,46 @@
-// import React, { useState, useEffect } from 'react';
-// import WowList from '../components/WowList';
-
-// const WowContainer = () => {
-//     const [wows, setWows] = useState([]);
-//     const [movies, setMovies] = useState([]);
-
-//     useEffect(() => {
-//         getWows();
-//     }, []);
-
-//     // const handleSelectMovie = (movie) => {
-//     //     console.log(movie);
-//     // };
-
-//     const options = { method: 'GET', headers: { accept: 'application/json' } };
-
-//     const getWows = function () {
-//         fetch('https://owen-wilson-wow-api.onrender.com/wows/random', options)
-//             .then(response => response.json())
-//             .then(data => {
-//                 console.log(data);
-//                 setWows(data);
-//                 setMovies(data.movies);
-//             })
-//             .catch(err => console.error(err));
-//     };
-
-//     const generateWows = function () {
-//         fetch('https://owen-wilson-wow-api.onrender.com/wows/random', options)
-//             .then(response => response.json())
-//             .then(data => {
-//                 console.log(data);
-//                 setWows(prevWows => [...prevWows, data]);
-//             })
-//             .catch(err => console.error(err));
-//     };
-
-//     return (
-//         <>
-//             <div className='main-wow-container'>
-//                 <button onClick={generateWows}>Generate Wow Quote</button>
-//                 {wows.length > 0 && <WowList wows={wows} />}
-//             </div>
-//         </>
-//     );
-// };
-
-// export default WowContainer;
-
-import React, { useState, useEffect } from "react";
-import WowList from "../components/WowList";
+import React, { useState, useEffect } from 'react';
+import WowList from '../components/WowList';
 
 const WowContainer = () => {
-    const [wowData, setWowData] = useState(null);
+    const [wowData, setWowData] = useState([]);
+    const [numWowItems, setNumWowItems] = useState(1);
 
     useEffect(() => {
         fetchWowData();
-    }, []);
+    }, [numWowItems]);
 
     const fetchWowData = async () => {
         const response = await fetch(
-            'https://owen-wilson-wow-api.onrender.com/wows/random'
+            `https://owen-wilson-wow-api.onrender.com/wows/random?results=${numWowItems}`
         );
         const data = await response.json();
-        setWowData(data[0]);
+        setWowData(data);
     };
 
     const handleNewWowClick = () => {
         fetchWowData();
     };
 
+    const handleNumWowItemsChange = (event) => {
+        const numItems = event.target.value;
+        setNumWowItems(numItems);
+    };
+
     return (
         <div>
             <h1>Wow List</h1>
-            <button onClick={handleNewWowClick}>New Wow</button>
-            {wowData && <WowList wows={[wowData]} />}
+            <label htmlFor="numWowItems">Number of Wow Items:</label>
+            <input
+                type="number"
+                id="numWowItems"
+                name="numWowItems"
+                min="1"
+                max="29"
+                value={numWowItems}
+                onChange={handleNumWowItemsChange}
+            />
+            <button onClick={handleNewWowClick}>Wow Me</button>
+            {wowData && <WowList wows={wowData} />}
         </div>
     );
 };
