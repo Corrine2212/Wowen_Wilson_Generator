@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+/* font-family: 'Lilita One', cursive;
+font-family: 'Open Sans', sans-serif; */
+
+
+
 .App {
   text-align: center;
   margin: 0px;
-  padding: 0px 100px;
+  padding: 0px 300px;
 }
 
 .App-header {
@@ -15,54 +22,165 @@
   color: white;
 }
 
-p #description {
+#description {
+  line-height: 30px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
 
-p #wow-details {
-  margin: 0px 0px 0px 0px;
+#wow-details {
+  margin: 0px 0px 10px 0px;
+  text-align: left;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 .wow-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 17px 0px 14px;
 }
 
 .wow-details-wrapper {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  margin-top: 20px;
+  margin-bottom: 30px;
+  flex-basis: 50%;
+}
 
+.wow-detail-text {
+  line-height: 20px;
+  text-align: left;
 }
 
 .wow-details span {
   display: inline-block;
   min-width: 100px;
   font-weight: bold;
-  text-align: right;
+  text-align: left;
+  text-transform: lowercase;
 }
 
+#wow-form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  border: solid lightblue;
+  padding: 20px;
+}
 
 span {
   font-weight: bold;
   text-align: right;
+  margin-right: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  text-transform: lowercase;
 }
 
 #span-italic {
   font-style: italic;
 }
 
-/* video and img styling */
-video {
-  max-width: 100%;
+.details-header {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 50px;
+
 }
 
-.wow-img {
-  max-width: 100%;
-  width: 20%;
+#movie-title{
+  font-weight: bold;
+  font-size: 40px;
+  text-align: left;
+  margin: 0px;
 }
+
+#release-date{
+  font-size: 18px;
+  text-align: left;
+  margin: 0px 0px 20px 0px;
+}
+
+video {
+  max-width: 100%;
+  margin-top: 50px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;}
+
+.wow-img {
+
+  height: 30vw;
+  margin-left: 30px;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;}
 
 hr {
   border: solid lightblue;
   width: 100%;
+}
+
+h4 {
+  margin-top: 0px;
+  text-align: left;
+}
+
+button {
+  background-color: aquamarine;
+  border: none;
+  border-radius: 10px;
+  margin-left: 10px;
+  padding: 9px 10px 9px 10px;
+  cursor: pointer;
+}
+
+select {
+  height: 30px;
+  padding-left: 5px;
+  margin-left: 10px;
+}
+
+#numWowItems {
+  height: 25px;
+  width: 50px;
+  padding-left: 5px;
+  margin-left: 10px;
+}
+
+h1 {
+  font-family: 'Lilita One', cursive;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    padding: 0px 35px;
+  }
+
+  .wow-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .wow-img {
+    margin-top: 30px;
+    box-sizing: 100%;
+    width: 100%;
+    height: 100%
+}
+  select { 
+    width: 50%;
+}
+
+video {
+  max-width: 100%;
+  margin-top: 50px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;};
+  
 }
 
 /* .App-logo {

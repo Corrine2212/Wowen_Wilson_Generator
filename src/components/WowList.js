@@ -3,15 +3,15 @@ import TheWow from '../components/TheWow';
 
 
 function WowList(props) {
-  const { wows } = props;
+    const { wows } = props;
 
-  return (
+    return (
     <>
-      {wows.map((wow) => (
+        {wows.map((wow) => (
         <TheWow key={wow.timestamp} wow={wow} />
-      ))}
+        ))}
     </>
-  );
+    );
 }
 
 export default WowList;
