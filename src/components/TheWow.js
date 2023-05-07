@@ -43,6 +43,7 @@ const TheWow = ({ wow }) => {
                         <source src={wow.video["480p"]} type="video/mp4" />
                         <source src={wow.video["360p"]} type="video/mp4" />
                     </video>
+                    <hr/>
                 </div>
             </div>
 

@@ -52,7 +52,7 @@ const WowContainer = () => {
         <>
             <div id='wow-form-wrapper'>
                 <div>
-                    <label htmlFor="numWowItems">Number of Wow Items:</label>
+                    <label htmlFor="numWowItems">No. of Wows:</label>
                     <input
                         type="number"
                         id="numWowItems"
@@ -62,10 +62,8 @@ const WowContainer = () => {
                         value={numWowItems}
                         onChange={handleNumWowItemsChange}
                     />
-                    <button onClick={handleNewWowClick}>Wow Me</button>
-                </div>
-                <div>
-                    <label htmlFor="movieSelect">Select a movie:</label>
+                
+                    <label htmlFor="movieSelect">Select a Movie:</label>
                     <select id="movieSelect" value={selectedMovie} onChange={handleMovieSelect}>
                         <option value="">All Movies</option>
                         {movies.map((movie, index) => (
@@ -74,9 +72,11 @@ const WowContainer = () => {
                             </option>
                         ))}
                     </select>
+                        <button onClick={handleNewWowClick}>WOW ME</button>
                 </div>
             </div>
             {wowData && <WowList wows={wowData} />}
+
         </>
     );
 };
