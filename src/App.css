@@ -1,7 +1,13 @@
+/* importing google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+
+/* font-family: 'Lilita One', cursive;
+font-family: 'Open Sans', sans-serif; */
+
 .App {
   text-align: center;
   margin: 0px;
-  padding: 0px 100px;
+  padding: 0px 300px;
 }
 
 .App-header {
@@ -15,69 +21,215 @@
   color: white;
 }
 
-p #description {
+#description {
+  line-height: 30px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
 }
 
-p #wow-details {
-  margin: 0px 0px 0px 0px;
+#wow-details {
+  margin: 0px 0px 10px 0px;
+  text-align: left;
+  font-size: 18px;
+  color: #545454;
+
+  /* text-transform: uppercase; */
 }
 
 .wow-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 17px 0px 14px;
 }
 
 .wow-details-wrapper {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  flex-basis: 50%;
+  border-radius: 20px;
+  /* background: linear-gradient(to right, #e5e6e6 50%, transparent 100%); */
+}
 
+.wow-detail-text {
+  line-height: 20px;
+  text-align: left;
 }
 
 .wow-details span {
   display: inline-block;
   min-width: 100px;
   font-weight: bold;
-  text-align: right;
+  text-align: left;
 }
 
+#wow-form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  /* border: solid lightgray; */
+  background-color: #f2f2f3;
+  padding: 20px;
+  margin-top: 35px;
+}
 
 span {
   font-weight: bold;
   text-align: right;
+  margin-right: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 40px;
 }
 
 #span-italic {
   font-style: italic;
 }
 
-/* video and img styling */
+.details-header {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 30px;
+}
+
+#movie-title {
+  font-weight: bold;
+  font-size: 45px;
+  text-align: left;
+  margin: 0px;
+  font-family: "Lilita One", cursive;
+}
+
+#release-date {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  margin: 0px 0px 20px 0px;
+  color: #545454;
+}
+
 video {
   max-width: 100%;
+  margin-top: 40px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.logo {
+  width: 50%;
+  margin-top: 30px;
 }
 
 .wow-img {
-  max-width: 100%;
-  width: 20%;
+  height: 30vw;
+  margin-left: 30px;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: rgba(255, 69, 0, 0.4) 5px 5px, rgba(255, 69, 0, 0.3) 10px 10px,
+    rgba(255, 69, 0, 0.2) 15px 15px, rgba(255, 69, 0, 0.1) 20px 20px,
+    rgba(255, 69, 0, 0.05) 25px 25px;
 }
 
 hr {
-  border: solid lightblue;
-  width: 100%;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 60px;
 }
 
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
+h4 {
+  margin-top: 0px;
+  text-align: left;
+}
 
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
+button:hover::before {
+  background: transparent url("../public/apple-touch-icon-57x57.png") 50%
+    no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 2rem;
+  margin-inline-end: 2rem;
+  width: 2rem;
+  animation: App-logo-spin infinite 5s linear;
+}
 
-/* .App-link {
-  color: #61dafb;
+button:hover::after {
+  background: transparent url("../public/apple-touch-icon-57x57.png") 50%
+    no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 2rem;
+  margin-inline-start: 2rem;
+  width: 2rem;
+  animation: App-logo-spin infinite 5s linear;
+}
+
+button {
+  background-color: orangered;
+  border: none;
+  border-radius: 10px;
+  margin: 10px 0px 0px 0px;
+  padding: 12px 10px 12px 10px;
+  cursor: pointer;
+  width: 100%;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Lilita One", cursive;
+  letter-spacing: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #d13900;
+}
+
+select {
+  height: 40px;
+  padding-left: 5px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: solid lightgray;
+}
+
+#numWowItems {
+  height: 35px;
+  width: 45px;
+  padding-left: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: solid lightgray;
+}
+
+label {
+  margin: 0px 0px 0px 30px;
+  font-family: "Open Sans", sans-serif;
+  color: #545454;
+}
+
+h1 {
+  font-family: "Lilita One", cursive;
+  font-size: 50px;
+}
+
+footer {
+  padding: 25px;
+  color: lightgray;
 }
 
 @keyframes App-logo-spin {
@@ -87,4 +239,92 @@ hr {
   to {
     transform: rotate(360deg);
   }
-} */
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1156px) {
+
+  .App {
+    text-align: center;
+    margin: 0px;
+    padding: 0px 250px;
+  }
+
+  .App-header {
+    font-size: calc(12px + 2vmin);
+  }
+  
+  #description {
+    font-size: 16px;
+  }
+  
+  #wow-details {
+    font-size: 16px;
+  }
+  
+  .wow-card {
+    margin: 20px 10px 0px 10px;
+  }
+  
+  .wow-details-wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #movie-title{
+    font-size: 36px;
+  }
+  
+  #release-date{
+    font-size: 16px;
+  }
+  
+  .wow-img {
+    /* height: 40vw; */
+    margin-left: 20px;
+    margin-top: 30px;
+    box-sizing: 100%;
+    width: 40%;
+    height: 40%;
+  }
+  
+  video {
+    max-width: 100%;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+
+  hr {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 911px) {
+  .App {
+    padding: 0px 35px;
+  }
+
+  .wow-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wow-img {
+    margin-top: 30px;
+    box-sizing: 100%;
+    width: 80%;
+    height: 80%;
+  }
+  
+  select {
+    width: 50%;
+  }
+
+  video {
+    max-width: 100%;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+}
