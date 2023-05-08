@@ -7,7 +7,7 @@ font-family: 'Open Sans', sans-serif; */
 .App {
   text-align: center;
   margin: 0px;
-  padding: 0px 300px;
+  padding: 0px 450px;
 }
 
 .App-header {
@@ -26,6 +26,7 @@ font-family: 'Open Sans', sans-serif; */
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
+  width: fit-content;
 }
 
 #wow-details {
@@ -48,10 +49,12 @@ font-family: 'Open Sans', sans-serif; */
 .wow-details-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px;
   flex-basis: 50%;
   border-radius: 20px;
+  width: auto;
   /* background: linear-gradient(to right, #e5e6e6 50%, transparent 100%); */
 }
 
@@ -77,6 +80,7 @@ font-family: 'Open Sans', sans-serif; */
   background-color: #f2f2f3;
   padding: 20px;
   margin-top: 35px;
+  width: auto;
 }
 
 span {
@@ -114,11 +118,19 @@ span {
   color: #545454;
 }
 
+#video-wrapper {
+  margin: 0px;
+  padding: 10px;
+  width: auto;
+}
+
 video {
-  max-width: 100%;
-  margin-top: 40px;
+  /* max-width: 100%; */
+  width: 100%;
+  margin: 55px 0px 0px 0px;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  text-align: center;
 }
 
 .logo {
@@ -242,7 +254,7 @@ footer {
 }
 
 /* Tablets */
-@media only screen and (min-width: 768px) and (max-width: 1156px) {
+@media only screen and (min-width: 768px) and (max-width: 1566px) {
 
   .App {
     text-align: center;
