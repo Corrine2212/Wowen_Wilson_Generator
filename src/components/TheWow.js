@@ -33,11 +33,11 @@ const TheWow = ({ wow }) => {
                     </div>
 
                     <img src={wow.poster} alt={`${wow.movie} poster`} className="wow-img" />
+
                 </div>
 
-
                 <div id="video-wrapper">
-                    <video width="640" height="360" controls>
+                    <video controls>
                         <source src={wow.video["1080p"]} type="video/mp4" />
                         <source src={wow.video["720p"]} type="video/mp4" />
                         <source src={wow.video["480p"]} type="video/mp4" />
