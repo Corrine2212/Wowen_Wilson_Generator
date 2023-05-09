@@ -1,3 +1,6 @@
+// uses react hooks, useState and useEffect to manage state and lifecycle methods
+// useState allows components to save and manage state data
+// useEffect performs additional logic after component has rendered. It's triggered once when fetchMovieList function is called
 import React, { useState, useEffect } from 'react';
 import WowList from '../components/WowList';
 
@@ -5,7 +8,7 @@ import WowList from '../components/WowList';
 const fetchWowData = (numWowItems, selectedMovie) => {
     let url = `https://owen-wilson-wow-api.onrender.com/wows/random?results=${numWowItems}`;
     if (selectedMovie) {
-        url += `&movie=${encodeURIComponent(selectedMovie)}`;
+        url += `&movie=${encodeURIComponent(selectedMovie)}`; // the encodeURIComponent fixed the ampersand issue in movie titles
     }
     return fetch(url)
         .then(response => response.json())
@@ -49,6 +52,7 @@ const WowContainer = () => {
         setNumWowItems(numItems);
     };
 
+// handleMovieSelect updates the state of selectedMovie based on the selection
     const handleMovieSelect = (event) => {
         const selected = event.target.value;
         setSelectedMovie(selected);
