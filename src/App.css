@@ -162,7 +162,7 @@ h4 {
 }
 
 button:hover::before {
-  background: transparent url("../public/apple-touch-icon-57x57.png") 50%
+  background: transparent url("./images/apple-touch-icon-57x57.png") 50%
     no-repeat;
   background-size: contain;
   border-radius: 50%;
@@ -175,7 +175,7 @@ button:hover::before {
 }
 
 button:hover::after {
-  background: transparent url("../public/apple-touch-icon-57x57.png") 50%
+  background: transparent url("./images/apple-touch-icon-57x57.png") 50%
     no-repeat;
   background-size: contain;
   border-radius: 50%;
