@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/wowen_wilson_generator/precache-manifest.484145394658f1f9a4ab62f4cc04a503.js"
+  "/Wowen_Wilson_Generator/precache-manifest.20e9df79cfd8cf09c65146d127c8aee5.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/wowen_wilson_generator/index.html", {
+workbox.routing.registerNavigationRoute("/Wowen_Wilson_Generator/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });

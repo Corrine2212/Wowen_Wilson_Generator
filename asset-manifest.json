@@ -1,15 +1,15 @@
 {
-  "main.css": "/wowen_wilson_generator/static/css/main.1fdc8fc6.chunk.css",
-  "main.js": "/wowen_wilson_generator/static/js/main.f21527e9.chunk.js",
-  "main.js.map": "/wowen_wilson_generator/static/js/main.f21527e9.chunk.js.map",
-  "runtime~main.js": "/wowen_wilson_generator/static/js/runtime~main.158b4dc5.js",
-  "runtime~main.js.map": "/wowen_wilson_generator/static/js/runtime~main.158b4dc5.js.map",
-  "static/js/2.ca48165b.chunk.js": "/wowen_wilson_generator/static/js/2.ca48165b.chunk.js",
-  "static/js/2.ca48165b.chunk.js.map": "/wowen_wilson_generator/static/js/2.ca48165b.chunk.js.map",
-  "static/js/3.d62f7fe7.chunk.js": "/wowen_wilson_generator/static/js/3.d62f7fe7.chunk.js",
-  "static/js/3.d62f7fe7.chunk.js.map": "/wowen_wilson_generator/static/js/3.d62f7fe7.chunk.js.map",
-  "index.html": "/wowen_wilson_generator/index.html",
-  "precache-manifest.484145394658f1f9a4ab62f4cc04a503.js": "/wowen_wilson_generator/precache-manifest.484145394658f1f9a4ab62f4cc04a503.js",
-  "service-worker.js": "/wowen_wilson_generator/service-worker.js",
-  "static/css/main.1fdc8fc6.chunk.css.map": "/wowen_wilson_generator/static/css/main.1fdc8fc6.chunk.css.map"
+  "main.css": "/Wowen_Wilson_Generator/static/css/main.1fdc8fc6.chunk.css",
+  "main.js": "/Wowen_Wilson_Generator/static/js/main.f21527e9.chunk.js",
+  "main.js.map": "/Wowen_Wilson_Generator/static/js/main.f21527e9.chunk.js.map",
+  "runtime~main.js": "/Wowen_Wilson_Generator/static/js/runtime~main.49e89197.js",
+  "runtime~main.js.map": "/Wowen_Wilson_Generator/static/js/runtime~main.49e89197.js.map",
+  "static/js/2.ca48165b.chunk.js": "/Wowen_Wilson_Generator/static/js/2.ca48165b.chunk.js",
+  "static/js/2.ca48165b.chunk.js.map": "/Wowen_Wilson_Generator/static/js/2.ca48165b.chunk.js.map",
+  "static/js/3.d62f7fe7.chunk.js": "/Wowen_Wilson_Generator/static/js/3.d62f7fe7.chunk.js",
+  "static/js/3.d62f7fe7.chunk.js.map": "/Wowen_Wilson_Generator/static/js/3.d62f7fe7.chunk.js.map",
+  "index.html": "/Wowen_Wilson_Generator/index.html",
+  "precache-manifest.20e9df79cfd8cf09c65146d127c8aee5.js": "/Wowen_Wilson_Generator/precache-manifest.20e9df79cfd8cf09c65146d127c8aee5.js",
+  "service-worker.js": "/Wowen_Wilson_Generator/service-worker.js",
+  "static/css/main.1fdc8fc6.chunk.css.map": "/Wowen_Wilson_Generator/static/css/main.1fdc8fc6.chunk.css.map"
 }
