@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/wowen_wilson_generator/precache-manifest.5c0bc6c69254e362f2c19814ec9bdc65.js"
+  "/wowen_wilson_generator/precache-manifest.484145394658f1f9a4ab62f4cc04a503.js"
 );
 
 workbox.clientsClaim();
